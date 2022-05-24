@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	<h1>Cart</h1><br>
+	<div id="qnty"><label for="qty">Quantity</label><input id="qty" type="number" name="qty"onkeyup="replace(22)" value="1"></div><br>
+	<label id="price">22</label>
+	<script>
+		function replace(sum) {
+			var input = document.getElementById("qty");
+			var price=document.getElementById("price");
+			price.innerHTML = parseInt(input.value)*sum;
+		}
+	</script>
+</body>
+</html>
